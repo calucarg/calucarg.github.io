@@ -1,0 +1,133 @@
+body,html {
+	min-height: 100%;
+	overflow-x: hidden;
+}
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body {
+	background-color: lightgray;
+	overflow-y:hidden;
+	min-height: 100vh;
+	display: flex;
+    flex-direction: column;
+	font-family: 'Mulish', sans-serif;
+}
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	text-transform: uppercase;
+	font-weight: 900;
+	background: black;
+}
+ul {
+	list-style: none;
+}
+.logo {
+	line-height: 0;
+}
+.logo a {
+	padding: 0;
+}
+.main-nav {
+	margin-right: .5rem;
+	
+}
+.main-nav__primaria {
+	display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.nav-item {
+	display: inline-block;
+}
+.nav-item a {
+	cursor: pointer;
+	color: white;
+	display: block;
+	padding: 1.2rem;
+}
+.nav-item a:hover{
+	color:black;
+	background-color: white;
+}
+a{
+	text-decoration: none;
+}
+footer{
+	margin-top: auto;
+}
+footer a{
+	color: white;
+	display: block;
+}
+.contenedor{
+	flex: 1;
+}
+.footer--grid{
+	display: grid;
+	background: black;	
+	grid-template-columns: 1fr 2fr 2fr 1fr;
+	grid-template-rows: 3fr 1fr;
+	grid-template-areas: 
+	"f-top-1 f-top-2 f-top-3 f-top-4" 
+	"f-bot f-bot f-bot f-bot";
+}
+.footer__bot,.footer__col{
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+	justify-self: center;
+	align-self: center;
+}
+.footer__col{
+	padding: 0.5rem 0rem 0.5rem 0rem;
+    font-size: 1.25rem;
+}
+.footer__col a{
+	padding: 1.5rem;
+}
+.footer__top-1{
+	grid-area: f-top-1;
+}
+.footer__top-2{
+	grid-area: f-top-2;
+}
+.footer__top-3{
+	grid-area: f-top-3;
+}
+.footer__top-4{
+	grid-area: f-top-4;
+	margin-block-start: 1em;
+    margin-block-end: 1em;
+	margin: 1rem;
+	justify-self: end;
+	align-self: end;
+}
+.footer__top-4 a{
+	display: block;
+	margin-block: .3rem;
+}
+.footer__top-4 img{
+	width: 3rem;
+}
+.footer__bot{
+	grid-area: f-bot;
+	padding: 0.3125rem 0rem 0.3125rem 0rem;
+    font-size: .875rem;
+	display: flex;
+}
+.footer__bot a{
+	margin-left: .5rem;
+	margin-right: .5rem;
+}
+
+@media screen and (min-width:600px) {
+}
+@media screen and (min-width:1024px) {
+}
