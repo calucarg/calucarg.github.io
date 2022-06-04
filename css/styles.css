@@ -143,14 +143,17 @@ footer a{
 .servicios__opcion a{
 	width: 100%;
 	max-width: 768px;
-	height: auto;
+	height: 4rem;
 	margin-inline: 1rem;
-	margin-top: 1rem;
-}
-.servicios__opcion img{
-	width: 100%;
-	max-width: 48rem;
-	height: auto;
+	margin-block: .5rem;
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+	background-image: url("/img/svcs_test.png");
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	justify-content: center;
 }
 .servicios__opcion{
 	display: flex;
