@@ -129,7 +129,30 @@ footer a{
 	margin-left: .5rem;
 	margin-right: .5rem;
 }
+/* IMPORTANTE!!! */
 .main-nav{
 	display: none!important;
 	visibility: hidden!important;
+}
+.main__titulo,.main__parrafo,.main__servicios{
+	text-align: center;
+}
+.index-main{
+	margin-block: 1.2rem;
+}
+.servicios__opcion a{
+	width: 100%;
+	max-width: 768px;
+	height: auto;
+	margin-inline: 1rem;
+	margin-top: 1rem;
+}
+.servicios__opcion img{
+	width: 100%;
+	max-width: 48rem;
+	height: auto;
+}
+.servicios__opcion{
+	display: flex;
+	justify-content: center;
 }
