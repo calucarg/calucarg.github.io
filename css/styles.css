@@ -232,6 +232,7 @@ h2{
 }
 .faq-main__title{
 	margin: 1rem;
+	z-index: 2;
 }
 .pregunta{
 	text-align: center;
