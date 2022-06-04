@@ -11,11 +11,16 @@ body {
 	background-color: lightgray;
 	overflow-y:hidden;
 	min-height: 100vh;
-	display: flex;
-    flex-direction: column;
 	font-family: 'Mulish', sans-serif;
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+	grid-template-areas: 
+	"header"
+	"main"
+	"footer";
 }
 header {
+	grid-area: header;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -58,7 +63,11 @@ ul {
 a{
 	text-decoration: none;
 }
+main{
+	grid-area: main;
+}
 footer{
+	grid-area: footer;
 	margin-top: auto;
 }
 footer a{
@@ -71,26 +80,23 @@ footer a{
 .footer--grid{
 	display: grid;
 	background: black;	
-	grid-template-columns: 1fr 2fr 2fr 1fr;
-	grid-template-rows: 3fr 1fr;
 	grid-template-areas: 
-	"f-top-1 f-top-2 f-top-3 f-top-4" 
-	"f-bot f-bot f-bot f-bot";
+	"f-top-1 "
+	"f-top-2"
+	"f-top-3" 
+	"f-top-4" 
+	"f-bot";
 }
 .footer__bot,.footer__col{
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
 	justify-self: center;
 	align-self: center;
 }
 .footer__col{
-	padding: 0.5rem 0rem 0.5rem 0rem;
     font-size: 1.25rem;
 }
 .footer__col a{
 	padding: 1.5rem;
+	text-align: center;
 }
 .footer__top-1{
 	grid-area: f-top-1;
@@ -103,31 +109,23 @@ footer a{
 }
 .footer__top-4{
 	grid-area: f-top-4;
-	margin-block-start: 1em;
-    margin-block-end: 1em;
-	margin: 1rem;
-	justify-self: end;
-	align-self: end;
 }
 .footer__top-4 a{
-	display: block;
+	display: inline;
 	margin-block: .3rem;
+	padding: .5rem!important;
+
 }
 .footer__top-4 img{
 	width: 3rem;
 }
 .footer__bot{
 	grid-area: f-bot;
-	padding: 0.3125rem 0rem 0.3125rem 0rem;
+	padding: 4rem 0rem 1rem 0rem;
     font-size: .875rem;
 	display: flex;
 }
 .footer__bot a{
 	margin-left: .5rem;
 	margin-right: .5rem;
-}
-
-@media screen and (min-width:600px) {
-}
-@media screen and (min-width:1024px) {
 }
