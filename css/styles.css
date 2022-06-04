@@ -129,3 +129,6 @@ footer a{
 	margin-left: .5rem;
 	margin-right: .5rem;
 }
+.main-nav__primaria{
+	display: none;
+}
