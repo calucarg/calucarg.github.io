@@ -259,17 +259,84 @@ details {
 	padding-bottom: 1rem;
 	margin-bottom: 0;
 }
-@media only screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
+	.contenedor-servicios{
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		margin: .5rem;
 
-  }
-  
-@media only screen and (max-width: 1023px) {
+	}
+	.servicios__opcion {
+		display: flex;
+		width: 30%;
+		margin-top: 1.25rem;
+		min-width: min-content;
+	}
+	.servicios__opcion a {
+		width: 100%;
+		min-width: 20%;
+		max-width: auto;
+		height: 30rem;
+		white-space: nowrap;
+		margin: 1rem;
+	}
+	.servicios__opcion a p{
+		color: white;
+		background-color: black;
+		opacity: 0.85;
+		padding: .8rem;
+		border-radius: .5rem;
+		cursor: pointer;
+	}
+	.svcs-1{
+		background-position-x: 10%;
+	}
+	.svcs-2{
+		background-position-x: 0%;
+	}
+	.svcs-3{
+		background-position-x: 18%;
+	}
+	
+}
+@media screen and (max-width: 1024px) {
 	header nav {
-	  display: none;
-	}
-  
-	#hamburger-icon {
+		display: none;
+  }
+  #hamburger-icon {
 	  display: block;
+  }
+}
+@media only screen and (min-width: 1024px) {
+	.footer--grid{
+		grid-template-columns: 1fr 2fr 2fr 1fr;
+		grid-template-rows: 3fr 1fr;
+		grid-template-areas: 
+		"f-top-1 f-top-2 f-top-3 f-top-4" 
+		"f-bot f-bot f-bot f-bot";
 	}
+	.footer__top-4{
+		grid-area: f-top-4;
+		margin-block-start: 1em;
+		margin-block-end: 1em;
+		margin: 1rem;
+		justify-self: end;
+		align-self: end;
+	}
+	.footer__top-4 a{
+		display: block;
+		margin-block: .3rem;
+	}
+	.footer__bot{
+		padding: 0.3125rem 0rem 0.3125rem 0rem;
+		font-size: .875rem;
+		display: flex;
+	}
+	.footer__bot a{
+		margin-left: .5rem;
+		margin-right: .5rem;
+	}
+	
   }
   
