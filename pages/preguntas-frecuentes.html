@@ -6,37 +6,145 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Preguntas frecuentes - BoostCS</title>
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Inicio header -->
+    <body>
+        <!-- Inicio header -->
     <header>
-        <!-- Logo -->
-        <h1 class="logo">
-            <a href="../index.html">        
-                <img src="../img/logo.png" alt="volver a la página principal">
+            <!-- Logo -->
+            <a href="/" class="header__logo">        
+                <img src="../img/logo.png" alt="logo">
             </a>
-        </h1>
-        <!-- Menú de navegación -->
-        <nav class="main-nav">
-            <ul class="main-nav__primaria">
-                <li class="nav-item nav__inicio">
-                    <a href="/">Inicio</a>
-                </li>
-                <li class="nav-item nav__boost">
+            <!-- Menú de navegación -->
+            <nav class="main-nav">
+                <ul class="main-nav__primaria">
+                    <li class="nav-item nav__inicio">
+                        <a href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item nav__boost">
+                        <a href="boost.html">Boost</a>
+                    </li>
+                    <li class="nav-item nav__cuentas">
+                        <a href="cuentas.html">Cuentas</a>   
+                    </li>
+                    <li class="nav-item nav__faq">
+                        <a href="preguntas-frecuentes.html">Preguntas frecuentes</a> 
+                    </li>
+                    <li class="nav-item nav__contacto">
+                        <a href="contacto.html">Contáctanos</a>  
+                    </li>
+                </ul>
+            </nav>
+            <div id="hamburger-icon" onclick="toggleMobileMenu(this)" class>
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+                <ul class="mobile-menu">
+                    <li class="nav-item nav__inicio">
+                        <a href="/">Inicio</a>
+                    </li>
+                    <li class="nav-item nav__boost">
+                        <a href="boost.html">Boost</a>
+                    </li>
+                    <li class="nav-item nav__cuentas">
+                        <a href="cuentas.html">Cuentas</a>   
+                    </li>
+                    <li class="nav-item nav__faq">
+                        <a href="preguntas-frecuentes.html">Preguntas frecuentes</a> 
+                    </li>
+                    <li class="nav-item nav__contacto">
+                        <a href="contacto.html">Contáctanos</a>  
+                    </li>
+                </ul>
+            </div>
+    </header>
+    <script src="../scripts/navbar.js"></script>
+    <!-- Fin header -->
+    <!-- Inicio main -->
+    <main class="faq-main">
+        <section>
+            <h2 class="faq-main__title">Preguntas frecuentes</h2>
+        </section>
+
+        <!-- Preguntas: -->
+        <section class="pregunta">
+            <!-- Pregunta 1 -->
+            <details>
+                <summary>¿Pregunta 1?</summary>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima dolor at sed nobis, quis enim eius aliquid dolorem doloribus saepe repellat aperiam reiciendis ducimus, sit perspiciatis veritatis architecto quos error.</p>
+            </details>
+            <!-- Pregunta 2 -->
+            <details>
+                <summary>¿Pregunta 2?</summary>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque alias beatae rem voluptate recusandae, quaerat praesentium libero corrupti excepturi est ipsum aperiam et quibusdam sit eaque explicabo, totam sequi similique.</p>
+            </details>
+            <!-- Pregunta 3 -->
+            <details>
+                <summary>¿Pregunta 3?</summary>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi ipsa saepe eveniet voluptatibus ex exercitationem impedit voluptas dolorem cupiditate velit, nisi nihil veniam sapiente, ducimus laudantium corrupti, quis iusto similique.</p>
+            </details>
+            <!-- Pregunta 4 -->
+            <details>
+                <summary>¿Pregunta 4?</summary>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima dolor at sed nobis, quis enim eius aliquid dolorem doloribus saepe repellat aperiam reiciendis ducimus, sit perspiciatis veritatis architecto quos error.</p>
+            </details>
+            <!-- Pregunta 5 -->
+            <details>
+                <summary>¿Pregunta 5?</summary>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque alias beatae rem voluptate recusandae, quaerat praesentium libero corrupti excepturi est ipsum aperiam et quibusdam sit eaque explicabo, totam sequi similique.</p>
+            </details>
+            <!-- Pregunta 6 -->
+            <details>
+                <summary>¿Pregunta 6?</summary>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi ipsa saepe eveniet voluptatibus ex exercitationem impedit voluptas dolorem cupiditate velit, nisi nihil veniam sapiente, ducimus laudantium corrupti, quis iusto similique.</p>
+            </details> 
+        </section>
+    </main>
+    <!-- Fin main -->
+    <!-- Inicio footer -->
+    <footer>
+        <div class="contenedor">
+            <div class="footer--grid">
+                <!-- Logo -->
+                <div class="footer__col logo footer__top-1">
+                    <a href="/">        
+                        <img src="../img/logo.png" alt="logo">
+                    </a>
+                </div>
+                <!-- Fin logo -->
+                <!-- Columna 1: boost; cuentas -->
+                <div class="footer__col footer__top-2">
                     <a href="boost.html">Boost</a>
-                </li>
-                <li class="nav-item nav__cuentas">
-                    <a href="cuentas.html">Cuentas</a>   
-                </li>
-                <li class="nav-item nav__faq">
-                    <a href="preguntas-frecuentes.html">Preguntas frecuentes</a> 
-                </li>
-                <li class="nav-item nav__contacto">
-                    <a href="contacto.html">Contáctanos</a>  
-                </li>
-            </ul>
-        </nav>
-</header>
-<!-- Fin header -->    
+                    <a href="cuentas.html">Cuentas</a>
+                </div>
+                <!-- Columna 2: FAQ, contacto -->
+                <div class="footer__col footer__top-3">
+                    <a href="preguntas-frecuentes.html">Preguntas frecuentes</a>
+                    <a href="contacto.html">Contacto</a>
+                </div>
+                <!-- Redes sociales -->
+                <div class="footer__col footer__top-4">
+                    <a href="/">        
+                        <img src="../img/wa_icon.png" alt="ir a whatsapp">
+                    </a>
+                    <a href="/">        
+                        <img src="../img/fb_icon.png" alt="ir a facebook">
+                    </a>
+                    <a href="/">        
+                        <img src="../img/ig_icon.png" alt="ir a instagram">
+                    </a>
+                </div>
+                <!-- Footer bottom -->
+                <div class="footer__bot">
+                    <a href="/">Términos y condiciones</a>
+                    <a href="/">Políticas de privacidad</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Fin footer -->    
 </body>
 </html>
