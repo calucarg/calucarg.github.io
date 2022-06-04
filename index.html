@@ -14,11 +14,9 @@
         <!-- Inicio header -->
     <header>
             <!-- Logo -->
-            <div class="logo">
-                <a href="/">        
-                    <img src="img/logo.png" alt="volver a la página principal">
-                </a>
-            </div>
+            <a href="/" class="header__logo">        
+                <img src="img/logo.png" alt="logo">
+            </a>
             <!-- Menú de navegación -->
             <nav class="main-nav">
                 <ul class="main-nav__primaria">
@@ -39,7 +37,18 @@
                     </li>
                 </ul>
             </nav>
+            <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+                <ul class="mobile-menu">
+                    <li><a href="/home">Home</a></li>
+                    <li><a href="/products">Products</a></li>
+                    <li><a href="/about">About</a></li>
+                </ul>
+            </div>
     </header>
+    <script src="navbar.js"></script>
     <!-- Fin header -->
     <main class="index-main-1">
         <section class="index-main">

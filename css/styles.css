@@ -26,17 +26,89 @@ header {
 	align-items: center;
 	text-transform: uppercase;
 	font-weight: 900;
-	background: black;
+	padding: 0 20px;
+	background-color: black;
 }
-ul {
+.header__logo {
+	display: inline-block;
+    padding-top: 0.3125rem;
+    padding-bottom: 0.3125rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    line-height: inherit;
+    white-space: nowrap;
+}
+.header__logo img{
+	max-width: 100%;
+	max-height: 100%;
+	display: block;
+}
+header ul {
 	list-style: none;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
 }
-.logo {
-	line-height: 0;
+header ul a {
+	color: white;
 }
-.logo a {
-	padding: 0;
+header ul li {
+	padding: 5px;
+	margin-left: 10px;
 }
+header ul li:hover {
+	transform: scale(1.1);
+	transition: 0.3s;
+}
+/* AAAAAAAAAAAAAAAA */
+#hamburger-icon {
+	margin: auto 0;
+	display: none;
+	cursor: pointer;
+  }
+  
+  #hamburger-icon div {
+	width: 35px;
+	height: 3px;
+	background-color: white;
+	margin: 6px 0;
+	transition: 0.4s;
+  }
+  
+  .open .bar1 {
+	-webkit-transform: rotate(-45deg) translate(-6px, 6px);
+	transform: rotate(-45deg) translate(-6px, 6px);
+  }
+  
+  .open .bar2 {
+	opacity: 0;
+  }
+  
+  .open .bar3 {
+	-webkit-transform: rotate(45deg) translate(-6px, -8px);
+	transform: rotate(45deg) translate(-6px, -8px);
+  }
+  
+  .open .mobile-menu {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+  }
+  
+  .mobile-menu {
+	display: none;
+	position: absolute;
+	top: 50px;
+	left: 0;
+	height: calc(100vh - 50px);
+	width: 100%;
+  }
+  
+  .mobile-menu li {
+	margin-bottom: 10px;
+  }
 .main-nav {
 	margin-right: .5rem;
 	
@@ -130,15 +202,15 @@ footer a{
 	margin-right: .5rem;
 }
 /* IMPORTANTE!!! */
-.main-nav{
-	display: none!important;
-	visibility: hidden!important;
-}
 .main__titulo,.main__parrafo,.main__servicios{
 	text-align: center;
 }
 .index-main{
 	margin-block: 1.2rem;
+}
+.servicios__opcion{
+	display: flex;
+	justify-content: center;
 }
 .servicios__opcion a{
 	width: 100%;
@@ -156,7 +228,13 @@ footer a{
 	text-align: center;
 	justify-content: center;
 }
-.servicios__opcion{
-	display: flex;
-	justify-content: center;
-}
+@media only screen and (max-width: 768px) {
+	header nav {
+	  display: none;
+	}
+  
+	#hamburger-icon {
+	  display: block;
+	}
+  }
+  
