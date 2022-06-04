@@ -131,4 +131,5 @@ footer a{
 }
 .main-nav__primaria{
 	display: none;
+	visibility: hidden;
 }
