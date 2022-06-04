@@ -37,10 +37,10 @@ header {
     font-size: 1.25rem;
     line-height: inherit;
     white-space: nowrap;
+	height: 100%;
+	width: 100%;
 }
 .header__logo img{
-	max-width: 100%;
-	max-height: 100%;
 	display: block;
 }
 header ul {
@@ -52,6 +52,7 @@ header ul {
 }
 header ul a {
 	color: white;
+    white-space:nowrap;
 }
 header ul li {
 	padding: 5px;
@@ -135,9 +136,6 @@ header ul li:hover {
 a{
 	text-decoration: none;
 }
-main{
-	grid-area: main;
-}
 footer{
 	grid-area: footer;
 	margin-top: auto;
@@ -202,11 +200,21 @@ footer a{
 	margin-right: .5rem;
 }
 /* IMPORTANTE!!! */
-.main__titulo,.main__parrafo,.main__servicios{
-	text-align: center;
+main{
+	grid-area: main;
 }
 .index-main{
 	margin-block: 1.2rem;
+}
+.main__titulo,.main__parrafo,.main__servicios{
+	text-align: center;
+}
+.main__titulo{
+	font-size: 3rem;
+	font-weight: 900;
+}
+.main__parrafo{
+	font-weight: 600;
 }
 .servicios__opcion{
 	display: flex;
