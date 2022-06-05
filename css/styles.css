@@ -179,6 +179,9 @@ main{
 }
 .index-main{
 	margin-block: 1.2rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 .main__titulo,.main__parrafo,.main__servicios,h2{
 	text-align: center;
@@ -188,7 +191,15 @@ main{
 	font-weight: 900;
 }
 p{
-	font-weight: 600;
+	font-weight: 700;
+	font-size: 1rem;
+}
+.main__parrafo{
+	display: flex;
+	justify-content: center;
+}
+.main__parrafo p{
+	max-width: 700px;
 }
 h2{
 	text-transform: uppercase;
@@ -246,6 +257,7 @@ details {
 	margin: 0 auto ;
 	background: gray;
 	overflow: hidden;
+	margin-bottom: .1rem;
   }
 .pregunta details summary{
 	font-size: 1.5rem;
