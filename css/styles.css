@@ -8,7 +8,10 @@ body,html {
 	padding: 0;
 }
 body {
-	background-color: lightgray;
+	background-image: url(/img/background-index.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 50%;
 	overflow-y:hidden;
 	min-height: 100vh;
 	font-family: 'Mulish', sans-serif;
@@ -50,13 +53,13 @@ header ul li:hover {
 	transform: scale(1.1);
 	transition: 0.3s;
 }
-#hamburger-icon {
+#menu-hamburguesa {
 	margin: auto 0;
 	display: none;
 	cursor: pointer;
 }
   
-#hamburger-icon div {
+#menu-hamburguesa div {
 	width: 35px;
 	height: 3px;
 	background-color: white;
@@ -304,7 +307,7 @@ details {
 	header nav {
 		display: none;
   }
-  #hamburger-icon {
+  #menu-hamburguesa {
 	  display: block;
   }
 }
