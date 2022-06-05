@@ -210,7 +210,7 @@ h2{
 	display: flex;
 	justify-content: center;
 	margin: .5rem;
-
+	border: .2rem solid black;
 }
 .servicios__opcion a{
 	width: 100%;
@@ -224,6 +224,7 @@ h2{
 	flex-direction: column;
 	text-align: center;
 	justify-content: center;
+	
 }
 .svcs-1{
 	background-image: url("/img/svcs1.jpg");
@@ -251,14 +252,21 @@ h2{
 .pregunta{
 	text-align: center;
 	margin: 1rem;
+
 }
 details {
 	width: 90%;
 	margin: 0 auto ;
 	background: gray;
 	overflow: hidden;
-	margin-bottom: .1rem;
+	border-top: .2rem solid black;
+	border-inline-end: .2rem solid black;
+	border-inline-start: .2rem solid black;
+	opacity: 85%;
   }
+.pregunta--end-border{
+	border-bottom: .2rem solid black;
+}
 .pregunta details summary{
 	font-size: 1.5rem;
 	font-weight: 700;
