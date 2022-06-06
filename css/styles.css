@@ -18,6 +18,7 @@ body {
 	display: flex;
 	flex-direction: column;
 }
+/* Header */
 header {
 	grid-area: header;
 	display: flex;
@@ -108,9 +109,11 @@ header ul li:hover {
 	color:black;
 	background-color: white;
 }
+/* Fin header */
 a{
 	text-decoration: none;
 }
+/* Footer */
 footer{
 	grid-area: footer;
 	margin-top: auto;
@@ -174,6 +177,8 @@ footer a{
 	margin-left: .5rem;
 	margin-right: .5rem;
 }
+/* Fin footer */
+/* Main */
 main{
 	grid-area: main;
 }
@@ -186,6 +191,7 @@ main{
 .main__titulo,.main__parrafo,.main__servicios,h2{
 	text-align: center;
 }
+/* Main parte "A" */
 .main__titulo{
 	font-size: 3rem;
 	font-weight: 900;
@@ -201,6 +207,7 @@ p{
 .main__parrafo p{
 	max-width: 700px;
 }
+/* Main parte "B" */
 h2{
 	text-transform: uppercase;
 	font-size: 2rem;
@@ -245,6 +252,8 @@ h2{
 	background-repeat: none;
 	background-size:cover;
 }
+/* Fin main */
+/* Inicio FAQ */
 .faq-main__title{
 	margin: 1rem;
 	z-index: 2;
@@ -282,6 +291,8 @@ details {
 	padding-bottom: 1rem;
 	margin-bottom: 0;
 }
+/* Fin FAQ */
+/* Media tablets */
 @media screen and (min-width: 768px) {
 	.contenedor-servicios{
 		display: flex;
@@ -323,6 +334,7 @@ details {
 	}
 	
 }
+/* Media menú navegación */
 @media screen and (max-width: 1024px) {
 	header nav {
 		display: none;
@@ -331,6 +343,7 @@ details {
 	  display: block;
   }
 }
+/* Media desktop */
 @media only screen and (min-width: 1024px) {
 	.footer--grid{
 		grid-template-columns: 1fr 2fr 2fr 1fr;
