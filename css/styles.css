@@ -106,6 +106,7 @@ header ul li {
 	color:black;
 	background-color: white;
 }
+
 /* Fin header */
 a{
 	text-decoration: none;
@@ -303,6 +304,11 @@ details {
 		width: 30%;
 		margin-top: 1.25rem;
 		min-width: min-content;
+		opacity: 0.95;
+		transition: 0.3s;
+	}
+	.servicios__opcion:hover{
+		opacity: 1;
 	}
 	.servicios__opcion a {
 		width: 100%;
@@ -319,6 +325,11 @@ details {
 		padding: .8rem;
 		border-radius: .5rem;
 		cursor: pointer;
+		transition: 0.2s;
+	}
+	.servicios__opcion a p:hover{
+		opacity: 1;
+		transform: scale(1.05);
 	}
 	.svcs-1{
 		background-position-x: 10%;
@@ -339,9 +350,16 @@ details {
   #menu-hamburguesa {
 	  display: block;
   }
+
 }
 /* Media desktop */
 @media only screen and (min-width: 1024px) {
+	  /* Animaciones header */
+	  header ul li:hover {
+		transform: scale(1.1);
+		transition: 0.3s;
+	}
+	/* Footer */
 	.footer--grid{
 		grid-template-columns: 1fr 2fr 2fr 1fr;
 		grid-template-rows: 3fr 1fr;
