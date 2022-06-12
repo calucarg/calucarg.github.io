@@ -49,10 +49,7 @@ header ul a {
 header ul li {
 	padding: 5px;
 }
-header ul li:hover {
-	transform: scale(1.1);
-	transition: 0.3s;
-}
+
 #menu-hamburguesa {
 	margin: auto 0;
 	display: none;
@@ -362,4 +359,3 @@ details {
 	}
 	
   }
-  
