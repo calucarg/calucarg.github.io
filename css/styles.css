@@ -103,3 +103,7 @@ hr.solid {
 		white-space: nowrap;
 	}
 }
+
+.accordion-body{
+	color: black;
+}
