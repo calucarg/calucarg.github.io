@@ -31,10 +31,6 @@ header nav {
 	padding: 0!important;
 }
 
-.nav-item {
-	white-space: nowrap;
-}
-
 .nav-link {
 	color: white!important;
 	padding: .8rem 1rem .8rem 1rem!important;
@@ -99,5 +95,11 @@ hr.solid {
 	}
 	.nav-link:hover {
 		transition: 0;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.nav-item {
+		white-space: nowrap;
 	}
 }
