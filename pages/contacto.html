@@ -5,44 +5,130 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto - BoostCS</title>
-    <!-- JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-</head>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" >
+    <link rel="stylesheet" href="../css/styles.css"></head>
 <body>
-    <!-- Inicio header -->
-    <header>
+    <div class="container-fluid d-flex flex-column min-vh-100">
+        <!-- Inicio header -->
+        <header class="row">
             <!-- Logo -->
-            <h1 class="logo">
+            <div class="col-2">
                 <a href="../index.html">        
-                    <img src="../img/logo.png" alt="volver a la página principal">
+                    <img src="../img/logo.png" alt="logo">
                 </a>
-            </h1>
+            </div>
             <!-- Menú de navegación -->
-            <nav class="main-nav">
-                <ul class="main-nav__primaria">
-                    <li class="nav-item nav__inicio">
-                        <a href="/">Inicio</a>
-                    </li>
-                    <li class="nav-item nav__boost">
-                        <a href="boost.html">Boost</a>
-                    </li>
-                    <li class="nav-item nav__cuentas">
-                        <a href="cuentas.html">Cuentas</a>   
-                    </li>
-                    <li class="nav-item nav__faq">
-                        <a href="preguntas-frecuentes.html">Preguntas frecuentes</a> 
-                    </li>
-                    <li class="nav-item nav__contacto">
-                        <a href="contacto.html">Contáctanos</a>  
-                    </li>
-                </ul>
-            </nav>
-    </header>
-    <!-- Fin header -->
+            <div class="col-10 justify-content-lg-end d-lg-flex align-items-center">
+                <nav class="navbar navbar-expand-lg navbar-light justify-content-end">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-lg-end" id="navbarNavDropdown">
+                        <ul class="navbar-nav col-10 col-lg-auto">
+                        <li class="nav-item text-center active">
+                            <a class="nav-link" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item text-center">
+                            <a class="nav-link" href="boost.html">Comprar boost</a>
+                        </li>
+                        </li>
+                        <li class="nav-item text-center">
+                            <a class="nav-link" href="cuentas.html">Comprar cuentas</a>
+                        </li>
+                        <li class="nav-item text-center">
+                            <a class="nav-link" href="preguntas-frecuentes.html">Preguntas frecuentes</a>
+                        </li>
+                        <li class="nav-item text-center">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <!-- Fin header -->
+        <main>
+            <!-- Formulario de contacto -->
+            <form action="">
+                <fieldset>
+                    <!-- Nombre -->
+                    <div class="formulario__opcion">
+                        <label for="nombre"></label>
+                        <input type="text" name="Nombre" placeholder="Nombre" id="nombre">
+                    </div>
+                    <!-- Email -->
+                    <div class="formulario__opcion">
+                        <label for="mail"></label>
+                        <input type="email" name="mail" placeholder="Correo electrónico">
+                    </div>
+                    <!-- Teléfono -->
+                    <div class="formulario__opcion">
+                        <label for="telefono"></label>
+                        <input type="tel" name="telefono" placeholder="Teléfono (opcional)">
+                    </div>
+                    <!-- Mensaje -->
+                    <div class="formulario__opcion">
+                        <textarea name="mensaje" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    </div>
+                    <!-- Botón de enviar -->
+                    <div class="formulario__opcion">
+                        <input type="submit" value="Enviar" class="btn">
+                    </div>
+                </fieldset>
+            </form>
+            <!-- Cierre formulario de contacto -->
+        </main>
+        <!-- Inicio footer -->
+        <footer class="row mt-auto">
+            <div class="row">
+                <!-- Logo -->
+                <div class="col-md-2 d-flex align-items-md-start align-items-center justify-content-md-center flex-column">
+                    <a href="../index.html">        
+                        <img src="../img/logo.png" alt="logo">
+                    </a>
+                </div>
+                <!-- Fin logo -->
+                <!-- Columna 1: boost; cuentas -->
+                <div class="col-md-4 text-center d-flex justify-content-md-evenly flex-column">
+                    <a href="boost.html">Boost</a>
+                    <a href="cuentas.html">Cuentas</a>
+                </div>
+                <!-- Columna 2: FAQ, contacto -->
+                <div class="col-md-4 text-center d-flex justify-content-md-evenly flex-column">
+                    <a href="preguntas-frecuentes.html">Preguntas frecuentes</a>
+                    <a href="contacto.html">Contacto</a>
+                </div>
+                <!-- Redes sociales -->
+                <div class="col-md-2 d-flex flex-row flex-md-column justify-content-center">
+                    <a href="/">        
+                        <img src="../img/wa_icon.png" class="rrss-icon" alt="ir a whatsapp">
+                    </a>
+                    <a href="/">        
+                        <img src="../img/fb_icon.png" class="rrss-icon" alt="ir a facebook">
+                    </a>
+                    <a href="/">        
+                        <img src="../img/ig_icon.png" class="rrss-icon" alt="ir a instagram">
+                    </a>
+                </div>
+            </div>
+            <hr class="solid">
+            <!-- Footer bottom -->
+            <div class="footer__bottom row">
+                <div class="d-flex justify-content-center text-center flex-column flex-md-row">
+                    <a href="/">Términos y condiciones</a>
+                    <a href="/">Políticas de privacidad</a>
+                </div>
+            </div>
+        </footer>
+        <!-- Fin footer -->
+    </div>
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
 </body>
 </html>
