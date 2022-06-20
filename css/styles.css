@@ -132,3 +132,45 @@ hr.solid {
 	background-color: lightgray;
 	color:black;
 }
+
+form { 
+	max-width:26rem; 
+	margin:3rem auto; 
+}
+input{
+	border: none;
+}
+
+.formulario__opcion {
+	color:black;
+	font-weight:500;
+	font-size: 1rem;
+	border-radius: 5px;
+	line-height: 22px;
+	background-color: white;
+	border:1px solid black;
+	transition: all 0.3s;
+	padding: 13px;
+	margin-bottom: 15px;
+	width:100%;
+	box-sizing: border-box;
+	outline:0;
+  }
+
+textarea {
+border: none;
+height: 9rem;
+line-height: 150%;
+resize:vertical;
+}
+
+.btn{
+	width: 100%;
+	text-transform: uppercase;
+	font-weight: 900;
+	text-align: center;
+}
+.btn:hover{
+	background-color: black;
+	color: white;
+}
