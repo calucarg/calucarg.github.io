@@ -8,15 +8,25 @@ a {
 	text-decoration: none;
 }
 
+body {
+	background-image: url(/img/background.jpg);
+	background-position: 50%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	font-family: 'Mulish', sans-serif;
+	overflow-y: hidden;
+}
+
+body,html {
+	min-height: 100%;
+	overflow-x: hidden;
+}
+
 main {
 	color: white;
 }
 
-.dropdown:hover .dropdown-menu {
-	display: block;
-	margin-top: 0;
-}
-
+/* Header */
 header {
 	background: black;
 	font-weight: 900;
@@ -54,20 +64,12 @@ header nav {
 	width: 35px;
 }
 
-body {
-	background-image: url(/img/background.jpg);
-	background-position: 50%;
-	background-repeat: no-repeat;
-	background-size: cover;
-	font-family: 'Mulish', sans-serif;
-	overflow-y: hidden;
+.dropdown:hover .dropdown-menu {
+	display: block;
+	margin-top: 0;
 }
-
-body,html {
-	min-height: 100%;
-	overflow-x: hidden;
-}
-
+/* Fin header */
+/* Footer */
 footer {
 	background-color: black;
 	padding-bottom: 2.5rem;
@@ -88,56 +90,27 @@ hr.solid {
 .rrss-icon {
 	width: 3rem;
 }
-@media screen and (max-width: 767px) {
-	.accordion{
-		margin-inline: 4rem;
-	}
-	footer a{
-		margin-block: .34rem;
-	}
-	footer img{
-		margin: .4rem;
-	}
-}
-@media screen and (max-width: 992px) {
-	#navbarNavDropdown {
-		margin-bottom: .75rem;
-		margin-top: .75rem;
-	}
-	.nav-link:hover {
-		transition: 0;
-	}
-}
-@media screen and (min-width: 768px) {
-	.rrss-icon{
-		margin-block: .5rem;
-	}
-	.footer__bottom a{
-		margin-inline: .8rem;
-	}
-}
-@media screen and (min-width: 992px) {
-	.nav-item {
-		white-space: nowrap;
-	}
-}
-.accordion{
+/* Fin footer */
+/* Preguntas frecuentes */
+.accordion {
 	color:black;
 	margin-block: 3rem;
 }
-.accordion-button{
+.accordion-button {
 	background-color: white;
 }
-.accordion-button:not(.collapsed){
+.accordion-button:not(.collapsed) {
 	background-color: lightgray;
 	color:black;
 }
-
+/* Fin preguntas frecuentes */
+/* Contacto */
 form { 
 	max-width:26rem; 
 	margin:3rem auto; 
 }
-input{
+
+input {
 	border: none;
 }
 
@@ -155,7 +128,7 @@ input{
 	width:100%;
 	box-sizing: border-box;
 	outline:0;
-  }
+}
 
 textarea {
 border: none;
@@ -164,13 +137,51 @@ line-height: 150%;
 resize:vertical;
 }
 
-.btn{
+.btn {
 	width: 100%;
 	text-transform: uppercase;
 	font-weight: 900;
 	text-align: center;
 }
-.btn:hover{
+.btn:hover {
 	background-color: black;
 	color: white;
+}
+/* Fin contacto */
+/* Medias */
+@media screen and (max-width: 767px) {
+	.accordion{
+		margin-inline: .2rem;
+	}
+	footer a{
+		margin-block: .34rem;
+	}
+	footer img{
+		margin: .4rem;
+	}
+}
+@media screen and (min-width: 768px) {
+	.accordion{
+		margin-inline: 4rem;
+	}
+	.rrss-icon{
+		margin-block: .5rem;
+	}
+	.footer__bottom a{
+		margin-inline: .8rem;
+	}
+}
+@media screen and (max-width: 991px) {
+	#navbarNavDropdown {
+		margin-bottom: .75rem;
+		margin-top: .75rem;
+	}
+	.nav-link:hover {
+		transition: 0;
+	}
+}
+@media screen and (min-width: 992px) {
+	.nav-item {
+		white-space: nowrap;
+	}
 }
