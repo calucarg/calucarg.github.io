@@ -70,6 +70,7 @@ body,html {
 
 footer {
 	background-color: black;
+	padding-bottom: 2.5rem;
 }
 
 footer a {
@@ -87,7 +88,17 @@ hr.solid {
 .rrss-icon {
 	width: 3rem;
 }
-
+@media screen and (max-width: 767px) {
+	.accordion{
+		margin-inline: 4rem;
+	}
+	footer a{
+		margin-block: .34rem;
+	}
+	footer img{
+		margin: .4rem;
+	}
+}
 @media screen and (max-width: 992px) {
 	#navbarNavDropdown {
 		margin-bottom: .75rem;
@@ -97,13 +108,69 @@ hr.solid {
 		transition: 0;
 	}
 }
-
+@media screen and (min-width: 768px) {
+	.rrss-icon{
+		margin-block: .5rem;
+	}
+	.footer__bottom a{
+		margin-inline: .8rem;
+	}
+}
 @media screen and (min-width: 992px) {
 	.nav-item {
 		white-space: nowrap;
 	}
 }
+.accordion{
+	color:black;
+	margin-block: 3rem;
+}
+.accordion-button{
+	background-color: white;
+}
+.accordion-button:not(.collapsed){
+	background-color: lightgray;
+	color:black;
+}
 
-.accordion-body{
-	color: black;
+form { 
+	max-width:26rem; 
+	margin:3rem auto; 
+}
+input{
+	border: none;
+}
+
+.formulario__opcion {
+	color:black;
+	font-weight:500;
+	font-size: 1rem;
+	border-radius: 5px;
+	line-height: 22px;
+	background-color: white;
+	border:1px solid black;
+	transition: all 0.3s;
+	padding: 13px;
+	margin-bottom: 15px;
+	width:100%;
+	box-sizing: border-box;
+	outline:0;
+  }
+
+textarea {
+border: none;
+height: 9rem;
+line-height: 150%;
+resize:vertical;
+}
+
+.btn{
+	width: 100%;
+	text-transform: uppercase;
+	font-weight: 900;
+	text-align: center;
+}
+.btn:hover{
+	background-color: black;
+	color: white;
 }
