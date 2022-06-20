@@ -103,6 +103,10 @@ hr.solid {
 	background-color: lightgray;
 	color:black;
 }
+.accordion-button:focus{
+	border-color: none!important;
+	box-shadow: none!important;
+}
 /* Fin preguntas frecuentes */
 /* Contacto */
 form { 
