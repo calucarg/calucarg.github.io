@@ -1,0 +1,177 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body,html {
+	min-height: 100%;
+	overflow-x: hidden;
+}
+
+body {
+	background-image: url(/img/background.jpg);
+	background-position: 50%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	font-family: 'Mulish', sans-serif;
+	overflow-y: hidden;
+    main {
+        color: white;
+    }
+    a {
+        text-decoration: none;
+    }
+}
+
+/* Header */
+header {
+background: black;
+font-weight: 900;
+text-transform: uppercase;
+    .navbar-toggler {
+        padding: 1rem;
+        div {
+            background-color: white;
+            height: 3px;
+            margin: 6px 0;
+            width: 35px;
+        }
+    }
+    nav {
+    padding: 0!important;
+        li {
+        margin: 0 .1rem 0 .1rem;
+            .nav-link {
+                color: white!important;
+                padding: .8rem 1rem .8rem 1rem!important;
+                &:hover {
+                    background-color: white;
+                    color: black!important;
+                    padding: .5rem 0 .5rem 0;
+                    transition: 0.35s;
+                }
+            }
+        }
+    }
+}
+/* Fin header */
+/* Footer */
+footer {
+background-color: black;
+padding-bottom: 2.5rem;  
+    a {
+        color: white;
+        &:hover {
+            color: rgba(200,200,200,1);
+        }
+    }
+
+    hr.solid {
+        border-top: 2px solid lightgray;
+    }
+
+    .rrss-icon {
+        width: 3rem;
+    }
+}
+/* Fin footer */
+/* Preguntas frecuentes */
+.accordion {
+color:black;
+margin-block: 3rem;
+    .accordion-item{
+        border-color: black!important;
+        .accordion-button {
+            background-color: white;
+            &:not(.collapsed) {
+                background-color: lightgray;
+                color:black;
+            }
+            &:focus{
+                border-color: none!important;
+                box-shadow: none!important;
+            }
+        }
+    }
+}
+/* Fin preguntas frecuentes */
+/* Contacto */
+form { 
+	max-width:26rem; 
+	margin:3rem auto; 
+    .formulario__opcion {
+        color:black;
+        font-weight:500;
+        font-size: 1rem;
+        border-radius: 5px;
+        line-height: 22px;
+        background-color: white;
+        border:1px solid black;
+        transition: all 0.3s;
+        padding: 13px;
+        margin-bottom: 15px;
+        width:100%;
+        box-sizing: border-box;
+        outline:0;
+    }
+    input {
+        border: none;
+    }
+    textarea {
+        border: none;
+        height: 9rem;
+        line-height: 150%;
+        resize:vertical;
+    }  
+    .btn {
+        width: 100%;
+        text-transform: uppercase;
+        font-weight: 900;
+        text-align: center;
+        &:hover {
+            background-color: black;
+            color: white;
+        }
+    }
+}
+/* Fin contacto */
+/* Medias */
+@media screen and (max-width: 767px) {
+	.accordion{
+		margin-inline: .2rem;
+	}
+    footer{
+        a{
+            margin-block: .34rem;
+        }
+        img{
+            margin: .4rem;
+        }
+    }
+}
+@media screen and (min-width: 768px) {
+	.accordion{
+		margin-inline: 4rem;
+	}
+	.rrss-icon{
+		margin-block: .5rem;
+	}
+	.footer__bottom a{
+		margin-inline: .8rem;
+	}
+}
+@media screen and (max-width: 991px) {
+	#navbarNavDropdown {
+		margin-bottom: .75rem;
+		margin-top: .75rem;
+	}
+	.nav-link:hover {
+		transition: 0;
+	}
+}
+@media screen and (min-width: 992px) {
+	.nav-item {
+		white-space: nowrap;
+	}
+}
