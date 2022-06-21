@@ -96,6 +96,10 @@ hr.solid {
 	color:black;
 	margin-block: 3rem;
 }
+.accordion-item{
+	border-color: black!important;
+}
+
 .accordion-button {
 	background-color: white;
 }
