@@ -1,3 +1,31 @@
+/* Medias */
+@media screen and (max-width: 767px) {
+  .accordion {
+    margin-inline: .2rem; }
+  footer a {
+    margin-block: .34rem; }
+  footer img {
+    margin: .4rem; } }
+
+@media screen and (min-width: 768px) {
+  .accordion {
+    margin-inline: 4rem; }
+  .rrss-icon {
+    margin-block: .5rem; }
+  .footer__bottom a {
+    margin-inline: .8rem; } }
+
+@media screen and (max-width: 991px) {
+  #navbarNavDropdown {
+    margin-bottom: .75rem;
+    margin-top: .75rem; }
+  .nav-link:hover {
+    transition: 0; } }
+
+@media screen and (min-width: 992px) {
+  .nav-item {
+    white-space: nowrap; } }
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -110,30 +138,3 @@ form {
       color: white; }
 
 /* Fin contacto */
-/* Medias */
-@media screen and (max-width: 767px) {
-  .accordion {
-    margin-inline: .2rem; }
-  footer a {
-    margin-block: .34rem; }
-  footer img {
-    margin: .4rem; } }
-
-@media screen and (min-width: 768px) {
-  .accordion {
-    margin-inline: 4rem; }
-  .rrss-icon {
-    margin-block: .5rem; }
-  .footer__bottom a {
-    margin-inline: .8rem; } }
-
-@media screen and (max-width: 991px) {
-  #navbarNavDropdown {
-    margin-bottom: .75rem;
-    margin-top: .75rem; }
-  .nav-link:hover {
-    transition: 0; } }
-
-@media screen and (min-width: 992px) {
-  .nav-item {
-    white-space: nowrap; } }
