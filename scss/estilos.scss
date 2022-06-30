@@ -85,18 +85,18 @@ padding-bottom: 2.5rem;
     box-shadow: none!important;
 }
 .accordion {
-@extend accordion;
+@extend %accordion;
 margin-block: 3rem;
     .accordion-item{
         border-color: $color-1!important;
         .accordion-button {
             background-color: $color-2;
             &:not(.collapsed) {
-                @extend accordion;
+                @extend %accordion;
                 background-color: lightgray;
             }
             &:focus{
-                @extend accordion;
+                @extend %accordion;
                 border-color: none!important;
             }
         }

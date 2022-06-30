@@ -55,19 +55,20 @@ footer {
   footer .rrss-icon {
     width: 3rem; }
 
-.accordion {
+.accordion, .accordion .accordion-item .accordion-button:not(.collapsed), .accordion .accordion-item .accordion-button:focus {
   color: black;
+  box-shadow: none !important; }
+
+.accordion {
   margin-block: 3rem; }
   .accordion .accordion-item {
     border-color: black !important; }
     .accordion .accordion-item .accordion-button {
       background-color: white; }
       .accordion .accordion-item .accordion-button:not(.collapsed) {
-        background-color: lightgray;
-        color: black; }
+        background-color: lightgray; }
       .accordion .accordion-item .accordion-button:focus {
-        border-color: none !important;
-        box-shadow: none !important; }
+        border-color: none !important; }
 
 form {
   max-width: 26rem;
