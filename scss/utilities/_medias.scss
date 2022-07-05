@@ -11,6 +11,7 @@
         }
     }
 }
+
 @media screen and (min-width: 768px) {
 	.accordion{
 		margin-inline: 4rem;
@@ -20,6 +21,44 @@
 	}
 	.footer__bottom a{
 		margin-inline: .8rem;
+	}
+	.contenedor-servicios{
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		margin: .5rem;
+
+	}
+	.servicios__opcion {
+		display: flex;
+		width: 30%;
+		margin-top: 1.25rem;
+		min-width: min-content;
+	}
+	.servicios__opcion a {
+		width: 100%;
+		min-width: 20%;
+		max-width: auto;
+		height: 30rem;
+		white-space: nowrap;
+		margin: 1rem;
+	}
+	.servicios__opcion a p{
+		color: white;
+		background-color: black;
+		opacity: 0.85;
+		padding: .8rem;
+		border-radius: .5rem;
+		cursor: pointer;
+	}
+	.svcs-1{
+		background-position-x: 10%;
+	}
+	.svcs-2{
+		background-position-x: 0%;
+	}
+	.svcs-3{
+		background-position-x: 18%;
 	}
 }
 @media screen and (max-width: 991px) {
