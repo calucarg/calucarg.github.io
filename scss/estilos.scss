@@ -91,6 +91,7 @@ p{
 	font-weight: 600;
 }
 .t{
+    padding-top: 1rem;
 	text-transform: uppercase;
 	font-size: 2rem;
 	font-weight: 750;
@@ -198,5 +199,98 @@ form {
     }
 }
 // Fin contacto
+//Boost
+form{
+    background-color:white;
+    border-color: black;
+    color: black;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+.boost {
+	margin: auto;
+	width: 30%;
+}
+.boost__legend {
+	margin-bottom: 1.25rem;
+	text-align: center;
+	font-size: 1.5rem;
+	font-weight: 600;
+}
+.boost label {
+	display: block;
+	font-weight: bold;
+}
+.boost label select {
+	display: block;
+}
+.option {
+	margin-bottom: .625rem;
+	padding-right: .3125rem;
+	width: 9.375rem;
+}
+.boost--inline {
+	display: inline-block;
+}
+.boost__checkbox {
+	display: inline;
+	cursor: pointer;
+}
+//Final boost
+//Cuentas
+.cuentas {
+	position: relative;
+}
+.cuentas__region {
+	display: block;
+	margin-left: 1.875rem;
+}
+.cuentas h2 {
+	margin-bottom: 1.25rem;
+	color: white;
+	font-family: 'Poppins', sans-serif, 'arial';
+	font-size: 1.5rem;
+	font-weight: 600;
+}
+.cuentas__tipo {
+	display: block;
+	margin-left: 1.875rem;
+}
+.cuentas__tipo table {
+	table-layout: fixed;
+	border-collapse: separate;
+}
+.cuentas__tipo table tbody tr {
+	margin: 6.25rem;
+}
+.cuentas__tipo table tbody td {
+	padding-left: .3125rem;
+}
+.cuentas__tipo table img {
+	margin: 0;
+	padding: 0;
+	width: 12.5rem;
+	height: 9.375rem;
+}
+.cuentas__main {
+	display: inline-block;
+}
+.cuentas__carrito {
+	margin-left: 1.875rem;
+	border: .3125rem solid black;
+	color: white;
+	font-family: 'Poppins', sans-serif, 'arial';
+}
+#cuentas__cantidad--min {
+	width: 1.875rem;
+}
+.cuentas__carrito h3,
+label,
+p,
+input {
+	margin: .625rem;
+}
 // Medias
 @import "utilities/medias";
