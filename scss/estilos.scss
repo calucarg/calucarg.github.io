@@ -9,7 +9,6 @@ $color-2: white;
 
 body,html {
 	min-height: 100%;
-	overflow-x: hidden;
 }
 
 body {
@@ -18,12 +17,26 @@ body {
 	background-repeat: no-repeat;
 	background-size: cover;
 	font-family: 'Mulish', sans-serif;
-	overflow-y: hidden;
+
     main {
         color: $color-2;
     }
     a {
         text-decoration: none;
+    }
+    .cont-btn{
+        display: flex;
+        justify-content: center;
+    }
+    .btn {
+        width: 90%;
+        text-transform: uppercase;
+        font-weight: 900;
+        text-align: center;
+        &:hover {
+            background-color: $color-1;
+            color: $color-2;
+        }
     }
 }
 
@@ -64,6 +77,7 @@ footer {
 background-color: $color-1;
 padding-bottom: 2.5rem;  
     a {
+        margin-inline: 6px;
         color: $color-2;
         &:hover {
             color: rgba(200,200,200,1);
@@ -95,6 +109,12 @@ p{
 	text-transform: uppercase;
 	font-size: 2rem;
 	font-weight: 750;
+}
+.t-index{
+    padding-top: 1rem;
+	text-transform: uppercase;
+	font-size: 4rem;
+	font-weight: 750;    
 }
 .servicios__opcion{
 	display: flex;
@@ -128,12 +148,6 @@ p{
 	background-repeat: none;
 	background-size:cover;
 }
-.svcs-3{
-	background-image: url("/img/svcs3.jpg");
-	background-position: center 13%;
-	background-repeat: none;
-	background-size:cover;
-}
 //Fin index
 //Preguntas frecuentes
 %accordion{
@@ -160,7 +174,7 @@ margin-block: 3rem;
 }
 // Fin preguntas frecuentes
 //Contacto
-form { 
+.contacto__form { 
 	max-width:26rem; 
 	margin:3rem auto; 
     .formulario__opcion {
@@ -185,29 +199,59 @@ form {
         border: none;
         height: 9rem;
         line-height: 150%;
+        margin-inline: 10px;
+        margin-top: 10px;
         resize:vertical;
-    }  
-    .btn {
-        width: 100%;
-        text-transform: uppercase;
-        font-weight: 900;
-        text-align: center;
-        &:hover {
-            background-color: $color-1;
-            color: $color-2;
-        }
-    }
+    } 
 }
 // Fin contacto
 //Boost
-form{
+.boost__form{
+    background-color: white;
+    border-color: black;
+    color: black;
+    border-radius: 7px;
+    margin-bottom: 10px;
+}
+.liga-container{
+    display: grid;
+    grid-template-areas: "rango-a option-a"". option-b"". option-c""cant-vic option-d""btn-a btn-a";
+}
+.rango-a{
+    grid-area: rango-a;
+    margin: 3px;
+}
+.cant-vic{
+    grid-area: cant-vic;
+    margin: 3px;
+}
+.option-a{
+    grid-area: option-a;
+    margin: 3px;
+}
+.option-b{
+    grid-area: option-b;
+    margin: 3px;
+}
+.option-c{
+    grid-area: option-c;
+    margin: 3px;
+}
+.option-d{
+    grid-area: option-d;
+    margin: 3px;
+}
+#btn-a{
+    grid-area: btn-a;
+    padding: 0;
+    max-width: max-content;
+}
+.divisiones{
     background-color:white;
     border-color: black;
     color: black;
     border-radius: 7px;
-    display: flex;
-    align-items: center;
-    align-content: center;
+
 }
 .boost {
 	margin: auto;
@@ -239,7 +283,49 @@ form{
 	cursor: pointer;
 }
 //Final boost
-//Cuentas
+//Divisiones
+.divisiones__form{
+    display: grid;
+    grid-template-areas: "divi-a a1"". b1"". c1""divi-b d1"". e1""checke f1""btn-b btn-b";
+}
+.divi-a{
+    grid-area: divi-a;
+    margin: 3px;
+}
+.divi-b{
+    grid-area: divi-b;
+    margin: 3px;
+}
+.option-a1{
+    grid-area: a1;
+    margin: 3px;
+}
+.option-b1{
+    grid-area: b1;
+    margin: 3px;
+}
+.option-c1{
+    grid-area: c1;
+    margin: 3px;
+}
+.option-d1{
+    grid-area: d1;
+    margin: 3px;
+}
+.option-e1{
+    grid-area: e1;
+    margin: 3px;
+}
+.option-f1{
+    grid-area: f1;
+    margin: 3px;
+}
+.checke{
+    grid-area: checke;
+}
+.btn-b{
+    grid-area: btn-b;
+}
 .cuentas {
 	position: relative;
 }

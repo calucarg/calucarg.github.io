@@ -4,20 +4,29 @@
   padding: 0; }
 
 body, html {
-  min-height: 100%;
-  overflow-x: hidden; }
+  min-height: 100%; }
 
 body {
   background-image: url(/img/background.jpg);
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
-  font-family: 'Mulish', sans-serif;
-  overflow-y: hidden; }
+  font-family: 'Mulish', sans-serif; }
   body main {
     color: white; }
   body a {
     text-decoration: none; }
+  body .cont-btn {
+    display: flex;
+    justify-content: center; }
+  body .btn {
+    width: 90%;
+    text-transform: uppercase;
+    font-weight: 900;
+    text-align: center; }
+    body .btn:hover {
+      background-color: black;
+      color: white; }
 
 header {
   background: black;
@@ -47,6 +56,7 @@ footer {
   background-color: black;
   padding-bottom: 2.5rem; }
   footer a {
+    margin-inline: 6px;
     color: white; }
     footer a:hover {
       color: #c8c8c8; }
@@ -69,6 +79,12 @@ p {
   padding-top: 1rem;
   text-transform: uppercase;
   font-size: 2rem;
+  font-weight: 750; }
+
+.t-index {
+  padding-top: 1rem;
+  text-transform: uppercase;
+  font-size: 4rem;
   font-weight: 750; }
 
 .servicios__opcion {
@@ -101,12 +117,6 @@ p {
   background-repeat: none;
   background-size: cover; }
 
-.svcs-3 {
-  background-image: url("/img/svcs3.jpg");
-  background-position: center 13%;
-  background-repeat: none;
-  background-size: cover; }
-
 .accordion, .accordion .accordion-item .accordion-button:not(.collapsed), .accordion .accordion-item .accordion-button:focus {
   color: black;
   box-shadow: none !important; }
@@ -122,10 +132,10 @@ p {
       .accordion .accordion-item .accordion-button:focus {
         border-color: none !important; }
 
-form {
+.contacto__form {
   max-width: 26rem;
   margin: 3rem auto; }
-  form .formulario__opcion {
+  .contacto__form .formulario__opcion {
     color: black;
     font-weight: 500;
     font-size: 1rem;
@@ -139,30 +149,61 @@ form {
     width: 100%;
     box-sizing: border-box;
     outline: 0; }
-  form input {
+  .contacto__form input {
     border: none; }
-  form textarea {
+  .contacto__form textarea {
     border: none;
     height: 9rem;
     line-height: 150%;
+    margin-inline: 10px;
+    margin-top: 10px;
     resize: vertical; }
-  form .btn {
-    width: 100%;
-    text-transform: uppercase;
-    font-weight: 900;
-    text-align: center; }
-    form .btn:hover {
-      background-color: black;
-      color: white; }
 
-form {
+.boost__form {
   background-color: white;
   border-color: black;
   color: black;
   border-radius: 7px;
-  display: flex;
-  align-items: center;
-  align-content: center; }
+  margin-bottom: 10px; }
+
+.liga-container {
+  display: grid;
+  grid-template-areas: "rango-a option-a" ". option-b" ". option-c" "cant-vic option-d" "btn-a btn-a"; }
+
+.rango-a {
+  grid-area: rango-a;
+  margin: 3px; }
+
+.cant-vic {
+  grid-area: cant-vic;
+  margin: 3px; }
+
+.option-a {
+  grid-area: option-a;
+  margin: 3px; }
+
+.option-b {
+  grid-area: option-b;
+  margin: 3px; }
+
+.option-c {
+  grid-area: option-c;
+  margin: 3px; }
+
+.option-d {
+  grid-area: option-d;
+  margin: 3px; }
+
+#btn-a {
+  grid-area: btn-a;
+  padding: 0;
+  max-width: max-content; }
+
+.divisiones {
+  background-color: white;
+  border-color: black;
+  color: black;
+  border-radius: 7px; }
 
 .boost {
   margin: auto;
@@ -192,6 +233,48 @@ form {
 .boost__checkbox {
   display: inline;
   cursor: pointer; }
+
+.divisiones__form {
+  display: grid;
+  grid-template-areas: "divi-a a1" ". b1" ". c1" "divi-b d1" ". e1" "checke f1" "btn-b btn-b"; }
+
+.divi-a {
+  grid-area: divi-a;
+  margin: 3px; }
+
+.divi-b {
+  grid-area: divi-b;
+  margin: 3px; }
+
+.option-a1 {
+  grid-area: a1;
+  margin: 3px; }
+
+.option-b1 {
+  grid-area: b1;
+  margin: 3px; }
+
+.option-c1 {
+  grid-area: c1;
+  margin: 3px; }
+
+.option-d1 {
+  grid-area: d1;
+  margin: 3px; }
+
+.option-e1 {
+  grid-area: e1;
+  margin: 3px; }
+
+.option-f1 {
+  grid-area: f1;
+  margin: 3px; }
+
+.checke {
+  grid-area: checke; }
+
+.btn-b {
+  grid-area: btn-b; }
 
 .cuentas {
   position: relative; }
